@@ -19,6 +19,9 @@ sudo python3 mini_ids.py
 # Specify network interface and custom alert threshold (e.g., 50 pkts/sec)
 sudo python3 mini_ids.py -i eth0 -t 50
 
+# Save suspicious packets to 'suspicious.pcap'
+sudo python3 mini_ids.py -o suspicious.pcap
+
 # Show help menu
 python3 mini_ids.py --help
 
