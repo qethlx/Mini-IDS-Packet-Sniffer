@@ -9,7 +9,22 @@ A lightweight, Python-based Intrusion Detection System (IDS) and packet sniffer 
 
 ## 🛠️ Installation & Usage
 
+Running the Tool
+
+Note: Packet sniffing requires elevated privileges. You must run this script as root (Linux/macOS) or Administrator (Windows).
+
+# Basic usage (listens on default interface, threshold: 100 pkts/sec)
+sudo python3 mini_ids.py
+
+# Specify network interface and custom alert threshold (e.g., 50 pkts/sec)
+sudo python3 mini_ids.py -i eth0 -t 50
+
+# Show help menu
+python3 mini_ids.py --help
+
 ### Prerequisites
 You need to install the `scapy` library to capture network packets:
 ```bash
 pip install scapy
+
+
